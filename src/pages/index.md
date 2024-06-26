@@ -42,6 +42,19 @@ socials:
 | **M.S. in Computer Science**, Boston University                                                                       | 2021-2023 |
 | **B.Eng. in Software Engineering**, Tongji University <p>Thesis: _Food Image Aesthetic Assessment and Captioning_</p> | 2016-2020 | -->
 
+
+## Patents <span text-base>(also see <a href="https://patents.google.com/?q=(%E4%BC%9F)&inventor=%E9%82%B9&assignee=%E5%87%AF%E8%BF%AA%E4%BB%95&oq=inventor:%E9%82%B9%E4%BC%9F+%E5%87%AF%E8%BF%AA%E4%BB%95" target="_blank" rel="noopener noreferrer">Google Patents</a>)</span>
+
+:::paper[/img/about/CN117453456A-2023-10-12-1603.png]
+#### 一种OTA固件版本安全性评估方法及相关装置
+
+本申请实施例公开了一种固件版本安全性评估方法及相关装置，方法包括：获取空中下载技术OTA固件文件，其中，OTA固件文件对应固件版本；确定对固件版本进行安全性评估的参数指标……
+
+
+
+[CN117453456A](https://patents.google.com/patent/CN117453456A/zh?q=(%E4%BC%9F)&inventor=%E9%82%B9&assignee=%E5%87%AF%E8%BF%AA%E4%BB%95&oq=inventor:%E9%82%B9%E4%BC%9F+%E5%87%AF%E8%BF%AA%E4%BB%95) / [Download PDF](https://patentimages.storage.googleapis.com/e6/5b/4d/e4d9427ea52791/CN117453456A.pdf)
+:::
+
 <!-- 
 ## Publications <span text-base>(also see <a href="https://scholar.google.com/citations?user=RuW6xgMAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>)</span>
 
