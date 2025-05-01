@@ -13,7 +13,7 @@ Please also check my [Google Scholar](https://scholar.google.com/citations?user=
 
 *Preprint*
 
-[arXiv:2502.13095](https://arxiv.org/abs/2502.13095)
+[arXiv\:2502.13095](https://arxiv.org/abs/2502.13095)
 :::
 
 :::paper[/img/publications/costep.png]
@@ -31,7 +31,7 @@ Shu Zhao, <u>Xiaohan Zou</u>, Tan Yu, Huijuan Xu
 
 *Preprint*
 
-[arXiv:2403.11373](https://arxiv.org/abs/2403.11373) / [code](https://github.com/Tree-Shu-Zhao/RebQ.pytorch)
+[arXiv\:2403.11373](https://arxiv.org/abs/2403.11373) / [code](https://github.com/Tree-Shu-Zhao/RebQ.pytorch)
 :::
 
 :::paper[/img/publications/tokenflow-1.png /img/publications/tokenflow-2.png]
@@ -41,7 +41,7 @@ Shu Zhao, <u>Xiaohan Zou</u>, Tan Yu, Huijuan Xu
 
 *Preprint*
 
-[arXiv:2209.13822](http://arxiv.org/abs/2209.13822)
+[arXiv\:2209.13822](http://arxiv.org/abs/2209.13822)
 :::
 
 

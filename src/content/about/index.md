@@ -46,7 +46,7 @@ By the way, take a look at [some things](/projects) I've built as a web develope
 
 *Preprint*
 
-[arXiv:2502.13095](https://arxiv.org/abs/2502.13095)
+[arXiv\:2502.13095](https://arxiv.org/abs/2502.13095)
 :::
 
 :::paper[/img/publications/costep.png]
@@ -64,7 +64,7 @@ Shu Zhao, <u>Xiaohan Zou</u>, Tan Yu, Huijuan Xu
 
 *Preprint*
 
-[arXiv:2403.11373](https://arxiv.org/abs/2403.11373) / [code](https://github.com/Tree-Shu-Zhao/RebQ.pytorch)
+[arXiv\:2403.11373](https://arxiv.org/abs/2403.11373) / [code](https://github.com/Tree-Shu-Zhao/RebQ.pytorch)
 :::
 
 
