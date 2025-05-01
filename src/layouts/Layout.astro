@@ -60,6 +60,10 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <meta property="twitter:description" content={description} />
     <meta property="twitter:url" content={canonicalURL} />
 
+    <!-- Sitemap & Other Files -->
+    <link rel="sitemap" href="/sitemap-index.xml" type="application/xml" />
+    <link rel="alternate" href="/rss.xml" type="application/rss+xml" />
+
     <!-- Color Theme -->
     <script>
       const checkTheme = () => {
