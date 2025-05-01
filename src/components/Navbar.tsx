@@ -52,7 +52,7 @@ export const Navbar: Component<{
           href="/publications"
           aria-label="Publications"
         >
-          <div i-ph:rocket-launch-duotone class="md:hidden" />
+          <div i-lucide:scroll class="md:hidden size-4.5" />
           <span lt-md:hidden>Publications</span>
         </a>
 

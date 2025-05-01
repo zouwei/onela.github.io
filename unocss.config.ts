@@ -19,7 +19,7 @@ export default defineConfig({
       vstack: "hstack flex-col",
       "inline-hstack": "inline-flex items-center",
       "prose-lg": "lg:text-lg max-w-content",
-      "nav-item": "gap-x-1 underline-offset-4 text-fg-light hover:text-fg-dark",
+      "nav-item": "underline-offset-4 text-fg-light hover:text-fg-dark",
       "nav-active": "underline decoration-wavy text-fg-dark",
       btn: "hstack gap-x-1 rounded transition-colors decoration-none text-sm !text-fg bg-bg-dark hover:(bg-neutral-500 !text-white !no-underline)",
       "add-ring": "ring-offset-bg outline-none ring-2 ring-primary ring-offset-2",

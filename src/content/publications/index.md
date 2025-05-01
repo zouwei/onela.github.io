@@ -52,7 +52,7 @@ Shu Zhao, <u>Xiaohan Zou</u>, Tan Yu, Huijuan Xu
 
 <u>Xiaohan Zou</u>, and Tong Lin
 
-International Joint Conference on Neural Networks (IJCNN), 2022
+*International Joint Conference on Neural Networks (IJCNN), 2022*
 
 **Oral Presentation**
 
@@ -64,7 +64,7 @@ International Joint Conference on Neural Networks (IJCNN), 2022
 
 <u>Xiaohan Zou</u>, Cheng Lin, Yinjia Zhang, and Qinpei Zhao
 
-International Conference on Tools with Artificial Intelligence (ICTAI), 2020
+*International Conference on Tools with Artificial Intelligence (ICTAI), 2020*
 
 **Oral Presentation**
 
@@ -76,7 +76,7 @@ International Conference on Tools with Artificial Intelligence (ICTAI), 2020
 
 <u>Xiaohan Zou</u>
 
-International Conference on Control Engineering and Artificial Intelligence (CCEAI), 2020
+*International Conference on Control Engineering and Artificial Intelligence (CCEAI), 2020*
 
 [paper](https://iopscience.iop.org/article/10.1088/1742-6596/1487/1/012016/pdf)
 :::
@@ -88,7 +88,7 @@ International Conference on Control Engineering and Artificial Intelligence (CCE
 
   Zhaohui Li, Feiwen Xiao, Jiaju Lin, <u>Xiaohan Zou</u>, Qingxiao Zheng and Jinjun Xiong
 
-  *In Submission*
+  *International Conference on Artificial Intelligence in Education (AIED) (Short Paper), 2025*
 
 - **Leveraging an LLM-Enhanced Bilingual Conversational Agent for EFL Children's Dialogic Reading: Insights from Children, Parents, and Educators**
 
