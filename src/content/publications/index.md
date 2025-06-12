@@ -16,13 +16,6 @@ Please also check my [Google Scholar](https://scholar.google.com/citations?user=
 [arXiv\:2502.13095](https://arxiv.org/abs/2502.13095)
 :::
 
-:::paper[/img/publications/costep.png]
-**Learning Conditional Space-Time Prompt Distributions for Video Class-Incremental Learning**
-
-<u>Xiaohan Zou</u>, Shu Zhao, Wenchao Ma, Huijuan Xu
-
-*Preprint*
-:::
 
 :::paper[/img/publications/rebq.png]
 **Reconstruct before Query: Continual Missing Modality Learning with Decomposed Prompt Collaboration**
@@ -37,7 +30,7 @@ Shu Zhao, <u>Xiaohan Zou</u>, Tan Yu, Huijuan Xu
 :::paper[/img/publications/tokenflow-1.png /img/publications/tokenflow-2.png]
 **TokenFlow: Rethinking Fine-grained Cross-modal Alignment in Vision-Language Retrieval**
 
-<u>Xiaohan Zou</u>, Changqiao Wu, Lele Cheng, and Zhongyuan Wang
+<u>Xiaohan Zou</u>, Changqiao Wu, Lele Cheng, Zhongyuan Wang
 
 *Preprint*
 
@@ -47,14 +40,22 @@ Shu Zhao, <u>Xiaohan Zou</u>, Tan Yu, Huijuan Xu
 
 ### Conference Papaers
 
+:::paper[/img/publications/costep.png]
+**Learning Conditional Space-Time Prompt Distributions for Video Class-Incremental Learning**
+
+<u>Xiaohan Zou</u>, Shu Zhao, Wenchao Ma
+
+*CVPR 2025 (Highlight)*
+
+[paper](https://openaccess.thecvf.com/content/CVPR2025/html/Zou_Learning_Conditional_Space-Time_Prompt_Distributions_for_Video_Class-Incremental_Learning_CVPR_2025_paper.html)
+:::
+
 :::paper
 **Efficient Meta-Learning for Continual Learning with Taylor Expansion Approximation**
 
-<u>Xiaohan Zou</u>, and Tong Lin
+<u>Xiaohan Zou</u>, Tong Lin
 
-*International Joint Conference on Neural Networks (IJCNN), 2022*
-
-**Oral Presentation**
+*IJCNN 2022 (Oral)*
 
 [paper](https://arxiv.org/abs/2210.00713) / [slide](/files/papers/ijcnn2022/slide.pdf)
 :::
@@ -62,11 +63,9 @@ Shu Zhao, <u>Xiaohan Zou</u>, Tan Yu, Huijuan Xu
 :::paper[/img/publications/ictai2020.png]
 **To be an Artist: Automatic Generation on Food Image Aesthetic Captioning**
 
-<u>Xiaohan Zou</u>, Cheng Lin, Yinjia Zhang, and Qinpei Zhao
+<u>Xiaohan Zou</u>, Cheng Lin, Yinjia Zhang, Qinpei Zhao
 
-*International Conference on Tools with Artificial Intelligence (ICTAI), 2020*
-
-**Oral Presentation**
+*ICTAI 2020 (Oral)*
 
 [paper](https://ieeexplore.ieee.org/document/9288208) / [code](https://github.com/Renovamen/Food-IAC) / [slide](/files/papers/ictai2020/slide.pdf)
 :::
@@ -76,7 +75,7 @@ Shu Zhao, <u>Xiaohan Zou</u>, Tan Yu, Huijuan Xu
 
 <u>Xiaohan Zou</u>
 
-*International Conference on Control Engineering and Artificial Intelligence (CCEAI), 2020*
+*CCEAI 2020*
 
 [paper](https://iopscience.iop.org/article/10.1088/1742-6596/1487/1/012016/pdf)
 :::
@@ -86,9 +85,9 @@ Shu Zhao, <u>Xiaohan Zou</u>, Tan Yu, Huijuan Xu
 
 - **StoryLab: Empowering Personalized Learning for Children through Teacher-Guided Multimodal Story Generation**
 
-  Zhaohui Li, Feiwen Xiao, Jiaju Lin, <u>Xiaohan Zou</u>, Qingxiao Zheng and Jinjun Xiong
+  Zhaohui Li, Feiwen Xiao, Jiaju Lin, <u>Xiaohan Zou</u>, Qingxiao Zheng, Jinjun Xiong
 
-  *International Conference on Artificial Intelligence in Education (AIED) (Short Paper), 2025*
+  *AIED 2025 (Short Paper)*
 
 - **Leveraging an LLM-Enhanced Bilingual Conversational Agent for EFL Children's Dialogic Reading: Insights from Children, Parents, and Educators**
 

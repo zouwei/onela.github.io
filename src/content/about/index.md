@@ -1,8 +1,8 @@
 ---
 name: Xiaohan Zou
 subname: 邹笑寒
-avatarFront: /img/me.jpg
-avatarBack: /img/avatar.jpg
+avatarFront: /img/avatar.jpg
+avatarBack: /img/me.jpg
 tltr: I do machine learning by day and build things for the web by night.
 socials:
   - icon: i-academicons:cv
@@ -52,9 +52,11 @@ By the way, take a look at [some things](/projects) I've built as a web develope
 :::paper[/img/publications/costep.png]
 **Learning Conditional Space-Time Prompt Distributions for Video Class-Incremental Learning**
 
-<u>Xiaohan Zou</u>, Shu Zhao, Wenchao Ma, Huijuan Xu
+<u>Xiaohan Zou</u>, Shu Zhao, Wenchao Ma
 
-*Preprint*
+*CVPR 2025 (Highlight)*
+
+[paper](https://openaccess.thecvf.com/content/CVPR2025/html/Zou_Learning_Conditional_Space-Time_Prompt_Distributions_for_Video_Class-Incremental_Learning_CVPR_2025_paper.html)
 :::
 
 :::paper[/img/publications/rebq.png]
