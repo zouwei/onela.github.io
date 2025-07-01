@@ -7,7 +7,7 @@ on:
       - 'v*'
 # 定义环境变量
 env:
-    OUTPUT_DIR: onela.cn  # 将 "dist" 定义为变量，可随时修改
+    OUTPUT_DIR: onela-cn  # 将 "dist" 定义为变量，可随时修改
 jobs:
   build:
     runs-on: ubuntu-latest
