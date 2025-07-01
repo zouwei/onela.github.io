@@ -1,5 +1,4 @@
 ---
-layout: ../layouts/About.astro
 name: 胡邹不胡诌
 subname: 胡诌
 avatarFront: img/avatar.jpg

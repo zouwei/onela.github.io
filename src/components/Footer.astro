@@ -1,24 +1,33 @@
 <footer
-  class="max-w-[810px] w-full hstack justify-between font-ui"
+  class="w-full hstack justify-between font-ui text-sm"
   m="x-auto t-20"
-  text="xs lg:sm"
+  max-w="[720px] lg:[810px]"
 >
-  <span text-c-lighter>
-    <span>© Hu Zou 2024</span>
+
+  <span text-fg-light>
+    <span>© Hu Zou 2025</span>
     <span lt-sm:hidden>· 写着玩玩儿</span>
     <span onclick="javascript:location.href='//beian.miit.gov.cn/'" style="cursor:pointer;">湘ICP备18014178号</span>
   </span>
-  <span hstack space-x-3>
+
+  <span hstack gap-x-3>
     <a
       href="https://github.com/zouwei/onela.github.io"
       aria-label="Source code"
       target="_blank"
       rel="noopener noreferrer"
+      nav-item
     >
       <div i-lucide:code-2></div>
       <span lt-sm:hidden>Code</span>
     </a>
-    <a href="/rss.xml" aria-label="RSS" target="_blank" rel="noopener noreferrer">
+    <a
+      href="/rss.xml"
+      aria-label="RSS"
+      target="_blank"
+      rel="noopener noreferrer"
+      nav-item
+    >
       <div i-heroicons:rss-20-solid></div>
       <span lt-sm:hidden>RSS</span>
     </a>
@@ -27,15 +36,10 @@
       aria-label="Sitemap"
       target="_blank"
       rel="noopener noreferrer"
+      nav-item
     >
       <div i-bx:map-alt></div>
       <span lt-sm:hidden>Sitemap</span>
     </a>
   </span>
 </footer>
-
-<style scoped>
-  footer a {
-    @apply hstack space-x-1 text-c-lighter hover:text-c-light;
-  }
-</style>

@@ -1,5 +1,4 @@
 ---
-layout: ../layouts/Projects.astro
 projects:
   Github Project:
     - name: Onela.js
