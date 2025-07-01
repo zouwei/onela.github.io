@@ -25,11 +25,11 @@ jobs:
 
       # 3. 安装依赖
       - name: Install dependencies
-        run: pnpm i
+        run: npm i
 
       # 4. 编译 TypeScript
       - name: Build TypeScript
-        run: pnpm build
+        run: npm run build
 
       # 5. 获取 tag 名称
       - name: Get tag name
