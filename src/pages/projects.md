@@ -1,7 +1,7 @@
 ---
 layout: ../layouts/Projects.astro
 projects:
-  Nodejs:
+  Github Project:
     - name: Onela.js
       link: https://github.com/zouwei/onela
       desc: 一种基于Nodejs适用于跨多SQL关系型数据的ORM框架
@@ -44,16 +44,17 @@ projects:
         - i-logos:typescript-icon
         - i-logos:unocss
       repo: zouwei/onela.github.io
-    # - name: Midgard
-    #   link: https://resume.zxh.io
-    #   desc: An interactive resume
-    #   icon: i-game-icons:ancient-sword
-    #   tech:
-    #     - i-logos:vue
-    #     - i-logos:typescript-icon
-    #     - i-logos:unocss
-    #     - i-logos:vitejs
-    #   repo: Renovamen/midgard
+    - name: Onela Toolbox
+      link: https://tool.onela.cn
+      desc: Onela Online Toolbox
+      icon: i-game-icons:ancient-sword
+      tech:
+        - i-logos:vue
+        - i-logos:typescript-icon
+        - i-logos:unocss
+        - i-logos:vitejs
+      repo: tool.onela.cn
+
     # - name: Cube Solver
     #   link: https://cube.zxh.io
     #   desc: A solver for Rubik's Cube
