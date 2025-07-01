@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://zxh.me/sitemap-index.xml
+Sitemap: https://onela.cn/sitemap-index.xml
