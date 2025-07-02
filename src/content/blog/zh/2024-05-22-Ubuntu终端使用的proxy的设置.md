@@ -4,11 +4,12 @@ tags:
   - Ubuntu
 ---
 
-> http/https代理实现
+## toc
+http/https代理实现
 
 
 
-### 在当前用户下实现proxy
+## 在当前用户下实现proxy
 
 在你的当前用户下的配置文件，`vim ~/.bashrc`中添加几行：
 
@@ -30,7 +31,7 @@ source ~/.bashrc
 
 
 
-### 在全系统范围内实现proxy
+## 在全系统范围内实现proxy
 
 如果想在全系统范围内使用，可以将上面的配置放在`/etc/environment`文件中，但是不要添加export
 

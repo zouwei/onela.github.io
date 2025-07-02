@@ -4,13 +4,14 @@ tags:
   - Visual Studio Code Serve>
 ---
 
-> 在 Ubuntu 上安装 Visual Studio Code (VSCode) Server 是通过在服务器上安装 Visual Studio Code 的远程开发扩展来实现的。
+## toc
+在 Ubuntu 上安装 Visual Studio Code (VSCode) Server 是通过在服务器上安装 Visual Studio Code 的远程开发扩展来实现的。
 
 
 
 以下是一些步骤，假设你已经在服务器上安装了 Ubuntu 操作系统：
 
-1. **更新系统：**
+## 更新系统
    在开始之前，确保你的系统已经更新到最新版本：
 
    ```bash
@@ -18,7 +19,7 @@ tags:
    sudo apt upgrade
    ```
 
-2. **安装 Visual Studio Code 服务器：**
+## 安装 Visual Studio Code 服务器
    下载并安装 Visual Studio Code Server。你可以选择适合你系统架构的版本。
 
    ```bash
@@ -39,7 +40,7 @@ tags:
 
    
 
-3. **创建一个系统用户：**
+## 创建一个系统用户
    为了安全起见，建议你创建一个专用的用户来运行 VSCode Server。
 
    ```bash
@@ -51,7 +52,7 @@ tags:
 
    这将创建一个名为 `code-server` 的系统用户，并将其主目录设置为 `/var/lib/code-server`。
 
-4. **设置系统服务：**
+## 设置系统服务
    创建一个 systemd 服务以在系统启动时自动启动 VSCode Server。
 
    ```bash
@@ -79,7 +80,7 @@ tags:
 
    替换 `your_password` 为你想要的密码。保存并关闭编辑器。
 
-5. **启动和启用服务：**
+## 启动和启用服务
    启动并启用 `code-server` 服务。
 
    ```bash
@@ -98,7 +99,7 @@ tags:
 
    这将在系统启动时自动启动 VSCode Server。
 
-6. **访问 VSCode Server：**
+## 访问 VSCode Server
    打开浏览器，并访问 `http://your_server_ip:8080`。输入你在 systemd 服务文件中设置的密码，你将能够通过浏览器访问 Visual Studio Code。
 
 请记住，将 `your_server_ip` 替换为你服务器的实际 IP 地址。

@@ -4,14 +4,14 @@ tags:
   - Ubuntu
 ---
 
+## toc
+需要准备大一点固态硬盘
 
->需要准备大一点固态硬盘
->
->系统环境：Ubuntu 22.04.4 LTS
+系统环境：Ubuntu 22.04.4 LTS
 
 
 
-### 搭建Btcoin全节点
+## 搭建Btcoin全节点
 
 Btcoin Core：`https://bitcoincore.org/`
 
@@ -168,7 +168,7 @@ bitcoin-cli dumpprivkey "address"
 
 
 
-### 安装runes节点
+## 安装runes节点
 
 ordinals节点安装包
 

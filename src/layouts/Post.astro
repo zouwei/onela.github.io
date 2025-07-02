@@ -26,7 +26,7 @@ const { Content } = await render(post);
 const tagURL = `/posts/${lang === "en" ? "" : lang + "/"}tags/`;
 
 // does this post has table of contents enabled?
-const hasToc = /## toc\n/.test(post.body ?? "");
+const hasToc = /## toc/.test(post.body ?? "");
 
 // previous and next post
 const posts = getSortedPosts(await getPosts(lang));

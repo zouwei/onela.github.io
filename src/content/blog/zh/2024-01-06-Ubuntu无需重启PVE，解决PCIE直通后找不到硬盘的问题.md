@@ -3,7 +3,9 @@ title: Ubuntu无需重启PVE，解决PCIE直通后找不到硬盘的问题
 tags:
   - PCIE
 ---
-> 添加了一块固态硬盘，PCIE转M.2硬盘，挂在硬盘使用lsblk找不到对应硬盘，无法挂载。
+
+## toc
+添加了一块固态硬盘，PCIE转M.2硬盘，挂在硬盘使用lsblk找不到对应硬盘，无法挂载。
 
 
 
