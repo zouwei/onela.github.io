@@ -8,7 +8,7 @@ export const blogSchema = z
     tags: z.array(z.string()).optional(),
     draft: z.boolean().optional()
   })
-  .strict();
+  .passthrough();
 
 const blog = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/blog" }),
