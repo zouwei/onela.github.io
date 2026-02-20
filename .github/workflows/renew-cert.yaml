@@ -18,5 +18,5 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.REMOTE_PORT }}
           script: |
-            acme.sh --renew -d onela.cn --force --ecc && systemctl reload nginx
+            ~/.acme.sh/acme.sh --renew -d onela.cn --force --ecc && systemctl reload nginx
             echo "Certificate renewed successfully"
