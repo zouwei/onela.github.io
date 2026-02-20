@@ -60,4 +60,5 @@ jobs:
           SOURCE: dist/
           TARGET: /data/www/onela.cn/
           ARGS: "-rlgoDzvc -i --delete"
-          SCRIPT_AFTER: nginx -s reload
+          SCRIPT_AFTER: |
+            acme.sh --renew -d onela.cn --force --ecc && systemctl reload nginx

@@ -1,0 +1,22 @@
+name: Renew SSL Certificate
+
+# 每月 1 号 UTC 2:00 自动执行（北京时间 10:00）
+on:
+  schedule:
+    - cron: '0 2 1 * *'
+  workflow_dispatch: # 支持手动触发
+
+jobs:
+  renew:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Renew certificate via SSH
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.REMOTE_HOST }}
+          username: ${{ secrets.REMOTE_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: ${{ secrets.REMOTE_PORT }}
+          script: |
+            acme.sh --renew -d onela.cn --force --ecc && systemctl reload nginx
+            echo "Certificate renewed successfully"
