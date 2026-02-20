@@ -1,11 +1,17 @@
----
+***
+
 title: 我写了一个极简又强大的 AI Markdown 编辑器：Moraya
 tags:
-  - Moraya
-  - AI
-  - Markdown
-  - MCP
----
+
+* Moraya
+
+* AI
+
+* Markdown
+
+* MCP
+
+***
 
 ## toc
 

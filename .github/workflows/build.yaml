@@ -62,3 +62,15 @@ jobs:
           asset_path: ./${{ env.OUTPUT_DIR }}-${{ steps.version.outputs.VERSION }}.tar.gz
           asset_name: ${{ env.OUTPUT_DIR }}-${{ steps.version.outputs.VERSION }}.tar.gz
           asset_content_type: application/gzip
+
+      # 9. 部署到服务器
+      - name: Deploy to server
+        uses: easingthemes/ssh-deploy@v5
+        with:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+          REMOTE_USER: ${{ secrets.REMOTE_USER }}
+          REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
+          SOURCE: dist/
+          TARGET: /data/www/onela.cn/
+          ARGS: "-rlgoDzvc -i --delete"
