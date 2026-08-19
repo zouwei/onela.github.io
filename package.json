@@ -1,49 +1,47 @@
 {
   "private": true,
-  "packageManager": "pnpm@9.15.9",
+  "packageManager": "pnpm@11.9.0",
   "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
   "scripts": {
     "dev": "astro dev --host",
     "build": "astro build",
-    "serve": "astro preview --host",
-    "lint": "eslint ."
+    "preview": "astro preview --host",
+    "astro": "astro",
+    "lint": "eslint .",
+    "test": "node --test --experimental-strip-types tests/plugins.test.ts tests/utils.test.ts"
   },
   "prettier": "@renovamen/prettier-config",
+  "dependencies": {
+    "@astrojs/solid-js": "^7.0.0",
+    "astro": "^7.0.2",
+    "solid-js": "^1.9.13"
+  },
   "devDependencies": {
-    "@astrojs/rss": "^4.0.12",
-    "@astrojs/sitemap": "^3.4.1",
-    "@astrojs/solid-js": "^5.1.0",
-    "@iconify/json": "^2.2.348",
-    "@renovamen/eslint-config": "^0.1.9",
-    "@renovamen/prettier-config": "^0.1.9",
+    "@astrojs/markdown-remark": "^7.2.0",
+    "@astrojs/rss": "^4.0.18",
+    "@astrojs/sitemap": "^3.7.3",
+    "@iconify/json": "^2.2.490",
+    "@renovamen/eslint-config": "^1.0.0",
+    "@renovamen/prettier-config": "^1.0.0",
     "@renovamen/utils": "^0.1.1",
     "@types/cross-spawn": "^6.0.6",
-    "astro": "^5.9.2",
+    "@unocss/astro": "^66.7.2",
     "cross-spawn": "^7.0.6",
-    "dayjs": "^1.11.13",
-    "eslint": "^9.28.0",
-    "fuse.js": "^7.1.0",
+    "dayjs": "^1.11.21",
+    "fuse.js": "^7.4.2",
     "mdast-util-toc": "^7.1.0",
     "medium-zoom": "^1.1.0",
-    "pnpm": "^10.12.4",
+    "pnpm": "^11.9.0",
     "rehype-autolink-headings": "^7.1.0",
     "rehype-external-links": "^3.0.0",
     "rehype-katex": "^7.0.1",
-    "rehype-pretty-code": "^0.14.1",
+    "rehype-pretty-code": "^0.14.3",
     "remark-directive": "^4.0.0",
     "remark-math": "^6.0.0",
-    "shiki": "^3.6.0",
-    "solid-js": "^1.9.7",
     "solidjs-use": "^2.3.0",
-    "taze": "^19.1.0",
-    "typescript": "^5.8.3",
-    "unocss": "^66.2.0"
-  },
-  "pnpm": {
-    "peerDependencyRules": {
-      "allowedVersions": {
-        "eslint": "9"
-      }
-    }
+    "unocss": "^66.7.2"
   }
 }

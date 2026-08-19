@@ -1,9 +1,10 @@
 ---
 import { slugify } from "@renovamen/utils";
 import { render, type CollectionEntry } from "astro:content";
-import { SITE, THEME } from "@config";
-import Layout from "@layouts/Layout.astro";
-import TocButtons from "@components/TocButtons";
+import type { ComponentProps } from "astro/types";
+import { SITE, THEME } from "@/config";
+import Layout from "@/layouts/Layout.astro";
+import TocButtons from "@/components/TocButtons";
 import {
   getPostDate,
   getPosts,
@@ -11,11 +12,13 @@ import {
   formatDate,
   readingTime,
   lastUpdated
-} from "@utils";
+} from "@/utils";
+
+type LayoutLang = NonNullable<ComponentProps<typeof Layout>["lang"]>;
 
 export interface Props {
   post: CollectionEntry<"blog">;
-  lang: string;
+  lang: LayoutLang;
 }
 
 const { post, lang } = Astro.props;
@@ -25,7 +28,7 @@ const { Content } = await render(post);
 const tagURL = `/posts/${lang === "en" ? "" : lang + "/"}tags/`;
 
 // does this post has table of contents enabled?
-const hasToc = /## toc/.test(post.body ?? "");
+const hasToc = /## toc\n/.test(post.body ?? "");
 
 // previous and next post
 const posts = getSortedPosts(await getPosts(lang));
@@ -57,6 +60,7 @@ const lastUpdatedText = THEME.lastUpdatedText;
   class="post"
   title={`${title} - ${SITE.title}`}
   author={author}
+  lang={lang}
   hasToc={hasToc}
   activePage="posts"
 >

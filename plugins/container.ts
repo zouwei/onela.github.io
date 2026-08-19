@@ -1,40 +1,61 @@
 import { visit } from "unist-util-visit";
-import type * as mdast from "mdast";
-import type { RemarkPlugin } from "@astrojs/markdown-remark";
+import type { Root, Paragraph, Text } from "mdast";
+import type { Plugin } from "unified";
+
+type DirectiveLabelData = { directiveLabel?: boolean };
+
+const CUSTOM_BLOCK_NAMES = new Set(["info", "tip", "warning", "danger", "details"]);
+
+const takeDirectiveLabel = (children: Root["children"]) => {
+  const firstChild = children[0];
+
+  if (
+    firstChild?.type !== "paragraph" ||
+    !(firstChild.data as DirectiveLabelData | undefined)?.directiveLabel
+  ) {
+    return "";
+  }
+
+  children.shift();
+  return ((firstChild as Paragraph).children[0] as Text | undefined)?.value ?? "";
+};
+
+const getImageAlt = (src: string) => {
+  const fileName = src.substring(src.lastIndexOf("/") + 1);
+  const extensionIndex = fileName.lastIndexOf(".");
+
+  return extensionIndex === -1 ? fileName : fileName.substring(0, extensionIndex);
+};
 
 const getImages = (info: string) => {
-  if (!info) return `<div class="paper-images no-image"></div>`;
+  const imageSources = info.trim().split(/\s+/).filter(Boolean);
 
-  const images = info
-    .split(" ")
+  if (imageSources.length === 0) {
+    return `<div class="paper-images no-image"></div>`;
+  }
+
+  const images = imageSources
     .map((src) => {
-      const alt = src.substring(src.lastIndexOf("/") + 1, src.lastIndexOf("."));
-      return `<img src="${src}" alt="${alt}" loading="lazy" decoding="async" />`;
+      return `<img src="${src}" alt="${getImageAlt(src)}" loading="lazy" decoding="async" />`;
     })
     .join("");
 
   return `<div class="paper-images"><div>${images}</div></div>`;
 };
 
-export const remarkContainer = (): ReturnType<RemarkPlugin> => {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  return (tree: any) => {
+export const remarkContainer: Plugin<[], Root> = () => {
+  return (tree) => {
     visit(tree, "containerDirective", (node) => {
       const data = node.data || (node.data = {});
       const children = node.children;
 
-      if (["info", "tip", "warning", "danger", "details"].includes(node.name)) {
+      if (CUSTOM_BLOCK_NAMES.has(node.name)) {
         data.hProperties = { class: ["custom-block", node.name] };
         data.hName = node.name === "details" ? "details" : "div";
 
-        let title = node.name.toUpperCase();
+        const title = takeDirectiveLabel(children) || node.name.toUpperCase();
 
-        if (children[0]?.data?.directiveLabel) {
-          title = ((children[0] as mdast.Paragraph).children[0] as mdast.Text).value;
-          children.shift();
-        }
-
-        const titleNode: mdast.Paragraph = {
+        const titleNode: Paragraph = {
           type: "paragraph",
           data: {
             hName: node.name === "details" ? "summary" : "p",
@@ -53,15 +74,7 @@ export const remarkContainer = (): ReturnType<RemarkPlugin> => {
 
       if (node.name === "paper") {
         data.hProperties = { class: ["paper-block"] };
-
-        let info = "";
-
-        if (children[0]?.data?.directiveLabel) {
-          info = ((children[0] as mdast.Paragraph).children[0] as mdast.Text).value;
-          children.shift();
-        }
-
-        const images = getImages(info);
+        const images = getImages(takeDirectiveLabel(children));
 
         children.unshift({
           type: "html",

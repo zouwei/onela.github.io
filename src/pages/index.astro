@@ -1,10 +1,10 @@
 ---
-import { frontmatter, Content } from "@content/about/index.md";
-import { SITE } from "@config";
-import type { SocialItem } from "@types";
-import Links from "@components/Links.astro";
-import FlipImage from "@components/FlipImage.astro";
-import Layout from "@layouts/Layout.astro";
+import { frontmatter, Content } from "@/content/about/index.md";
+import { SITE } from "@/config";
+import type { SocialItem } from "@/types";
+import Links from "@/components/Links.astro";
+import FlipImage from "@/components/FlipImage.astro";
+import Layout from "@/layouts/Layout.astro";
 
 interface Frontmatter {
   name: string;
@@ -28,12 +28,19 @@ const { name, subname, avatarFront, avatarBack, tltr, socials } =
     )
   }
 
-  <h3 my-0 text-fg-light>Hello, this is</h3>
+  <p my-0 text="fg-light xl lg:2xl" font-semibold>Hello, this is</p>
 
-  <h1 my-1.5>
-    {name}
-    {subname && <font text="base fg-light"> ({subname})</font>}.
-  </h1>
+  <div class="my-1.5 flex items-baseline flex-wrap gap-x-1">
+    <h1 my-0>{name}</h1>
+    {
+      subname && (
+        <span text="base fg-light" font-extrabold ml-1>
+          ({subname})
+        </span>
+      )
+    }
+    <span text-4xl font-extrabold>.</span>
+  </div>
 
   {
     tltr && (
