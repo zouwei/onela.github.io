@@ -9,7 +9,7 @@ import { remarkPlugins, rehypePlugins } from "./plugins";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://zxh.me/",
+  site: "https://onela.cn",
   compressHTML: true,
   integrations: [
     solid(),

@@ -1,8 +1,8 @@
 ---
 name: 胡邹不胡诌
 subname: 胡诌
-avatarFront: img/avatar.jpg
-avatarBack: img/me.jpeg
+avatarFront: /img/avatar.jpg
+avatarBack: /img/me.jpeg
 tltr: 学习笔记
 socials:
   # - icon: i-academicons:cv
