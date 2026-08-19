@@ -1,15 +1,11 @@
-
-
 ---
-
 title: 从 Markdown 到 AI Agent：Moraya 的进化之路
 tags:
-
-- Rust
-- Tauri
-- MCP
-
+  - Rust
+  - Tauri
+  - MCP
 ---
+
 ## toc
 
 当隐私优先遇上全能力 AI，一款仅 10MB 的 Rust + Tauri v2 应用如何成为你的本地 AI Agent 平台？本文全面介绍 Moraya 从 Markdown 编辑器到 AI Agent 平台的进化历程、核心技术架构、MCP 生态与安全设计。

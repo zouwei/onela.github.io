@@ -12,6 +12,3 @@ node_modules
 .omx/
 AGENTS.md
 skills-lock.json
-
-# 本仓库 CI 使用 npm，pnpm 锁文件为误生成产物
-pnpm-lock.yaml
