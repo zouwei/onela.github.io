@@ -34,7 +34,9 @@
 }
 
 .table-of-contents li {
-  @apply truncate;
+  /* leading/my-0 用于抵消 presetTypography 新增的 :where(li) 外边距，
+     并覆盖从 .prose-lg 继承来的绝对行高（1.75rem），恢复紧凑的目录行距 */
+  @apply truncate my-0 leading-[1.75];
 }
 
 .table-of-contents > li > p::before,

@@ -83,7 +83,13 @@ const canonicalURL = new URL(Astro.url.pathname, SITE.website);
     </script>
 
     <!-- Page Transitions -->
-    <ClientRouter />
+    {/*
+      仅生产启用视图过渡。Astro 7 的 dev 服务端下发的是未经 UnoCSS 转换的
+      原始 @apply 样式，靠页面 JS 再加载一份编译后的 CSS 修正；而客户端路由
+      跳转只替换 DOM，不会重新注入那份 CSS，导致从列表页点进文章后样式错乱、
+      必须刷新才恢复。dev 下改走整页加载可规避，生产为单一 CSS 文件不受影响。
+    */}
+    {import.meta.env.PROD && <ClientRouter />}
   </head>
 
   <body class="font-sans">
