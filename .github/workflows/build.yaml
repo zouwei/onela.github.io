@@ -17,30 +17,35 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 2. 设置 Node.js 环境
+      # 2. 设置 pnpm（版本取自 package.json 的 packageManager 字段）
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+
+      # 3. 设置 Node.js 环境（须在 pnpm 之后，cache 依赖 pnpm store）
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '22'
+          cache: 'pnpm'
 
-      # 3. 安装依赖
+      # 4. 安装依赖
       - name: Install dependencies
-        run: npm i
+        run: pnpm install --frozen-lockfile
 
-      # 4. 编译 TypeScript
-      - name: Build TypeScript
-        run: npm run build
+      # 5. 构建
+      - name: Build
+        run: pnpm build
 
-      # 5. 获取版本号（使用短 commit SHA）
+      # 6. 获取版本号（使用短 commit SHA）
       - name: Get version
         id: version
         run: echo "VERSION=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
 
-      # 6. 创建 tar 文件（包含版本号）
+      # 7. 创建 tar 文件（包含版本号）
       - name: Create tar archive with version
         run: tar -czf ${{ env.OUTPUT_DIR }}-${{ steps.version.outputs.VERSION }}.tar.gz -C dist .
 
-      # 7. 创建 Release 并上传文件
+      # 8. 创建 Release 并上传文件
       - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
