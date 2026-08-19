@@ -6,6 +6,8 @@ author: Moraya团队
 ---
 # 当AI写作工具开始分道扬镳：Moraya与OpenClaw的本质区别
 
+## toc
+
 上周，一位朋友问我："Moraya不就是个Markdown编辑器吗？怎么突然和OpenClaw放在一起比较了？"
 
 这个问题让我意识到，很多人还没看到Moraya经过20多个大版本迭代后的本质变化。是的，Moraya最初确实是以Markdown AI编辑器为MVP原型设计的，但今天的Moraya已经完全超越了这个范畴——**Markdown只是它的语法框架，AI Agent才是它的核心能力**。
