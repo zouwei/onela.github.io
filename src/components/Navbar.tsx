@@ -56,14 +56,6 @@ export const Navbar: Component<{
           <span lt-md:hidden>Publications</span>
         </a> */}
 
-        <a
-          class={`nav-item ${props.activePage === "projects" && "nav-active"}`}
-          href="/projects"
-          aria-label="Projects"
-        >
-          <div i-ph:rocket-launch-duotone class="md:hidden" />
-          <span lt-md:hidden>项目集</span>
-        </a>
 
         <a
           class={`nav-item ${props.activePage === "posts" && "nav-active"}`}

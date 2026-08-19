@@ -8,15 +8,11 @@ socials:
   # - icon: i-academicons:cv
   #   link: /files/cv/en.pdf
   - icon: "i-ion:mail-outline"
-    link: "mailto:huzougege@gmail.com"
-  - icon: i-eva:github-outline
-    link: https://github.com/zouwei
+    link: "mailto:huzougege@qq.com"
   # - icon: i-radix-icons:linkedin-logo
   #   link: https://www.linkedin.com/in/xiaohan-zou
   # - icon: i-academicons:google-scholar
   #   link: https://scholar.google.com/citations?user=RuW6xgMAAAAJ
-  - icon: i-carbon:logo-x
-    link: https://www.twitter.com/ihuzou
   - icon: i-ant-design:zhihu-outlined
     link: https://www.zhihu.com/people/onela
   # - icon: i-ic:twotone-catching-pokemon
@@ -120,7 +116,7 @@ International Conference on Control Engineering and Artificial Intelligence (CCE
 
 ## Miscellaneous
 
-- 🚀 前端代码是抄的一个本家妹子的开源项目 [personal website](https://github.com/Renovamen/renovamen.github.io) ，源作者是一个非常优秀的人，前端大牛，作者有着强大的工程师思维和细腻的审美，她的作品让我在万千作品中眼前一亮，就直接使用了她的开源博客代码改写了这套用于整理一些开发笔记的个人博客。
+- 🚀 一个偏后端和基础设施的工程师。日常在 Node.js、Docker、Linux 和虚拟化里打转，做过 IoT 固件安全相关的活儿，也顺手造过几个自己用的小轮子。写博客纯粹是给自己留档——踩过的坑记下来，下次少踩一遍；如果碰巧也帮到了搜到这里的你，那更好。
 
 - 🧐 _Onela_ 源自多年以前一个出于“纯粹性好玩”的想法构建， _玩啦_ 的意思。
 

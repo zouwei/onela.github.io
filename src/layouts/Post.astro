@@ -4,7 +4,6 @@ import { render, type CollectionEntry } from "astro:content";
 import { SITE, THEME } from "@config";
 import Layout from "@layouts/Layout.astro";
 import TocButtons from "@components/TocButtons";
-import Giscus from "@components/Giscus";
 import {
   getPostDate,
   getPosts,
@@ -48,8 +47,6 @@ const prevPost =
       };
 
 // edit link
-const editURL = THEME.editLink.pattern.replace(/:path/g, `/${post.id}`);
-const editText = THEME.editLink.text;
 
 // last updated time
 const lastUpdatedTime = lastUpdated(post.id);
@@ -93,14 +90,10 @@ const lastUpdatedText = THEME.lastUpdatedText;
     <Content />
   </div>
 
-  <div class="grid md:grid-cols-2 text-[0.95em]">
-    <a href={editURL} target="_blank" rel="noopener noreferrer" class="hover:underline">
-      <span class="i-tabler:edit size-4.5 align-text-top mr-1"></span>
-      {editText}
-    </a>
+  <div class="text-[0.95em]">
     {
       lastUpdatedTime !== "Invalid Date" && (
-        <span md:text-right text-fg-light>
+        <span text-fg-light>
           <span class="i-ic:round-update size-4.5 mr-1" />
           {lastUpdatedText}
           {lastUpdatedTime}
@@ -129,8 +122,4 @@ const lastUpdatedText = THEME.lastUpdatedText;
       </div>
     )
   }
-
-  <div mt-20>
-    <Giscus client:visible />
-  </div>
 </Layout>

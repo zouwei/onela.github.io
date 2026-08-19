@@ -4,11 +4,3 @@ export interface SocialItem {
   name?: string;
 }
 
-export interface ProjectItem {
-  name: string;
-  link: string;
-  desc: string;
-  icon: string;
-  tech?: string[];
-  repo?: string;
-}
